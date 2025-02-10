@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <meta charset=" UTF-8">
+    <style>
+        /* as tag podem receber css de forma individualizada */
+        p{  /* Color representa cor da fonte*/
+            /* As classes sobrepoem o estilo dos seletores genericos */
+            color: green;
+        }
+        .vermelho{ color: red ;
+        }
+        .azul{ color: blue;
+        }
+        .bgciano{ 
+            /* background é um atributo com mais configurações sendo aqui trocado apenas a cor de fundo */
+            background-color: aqua;
+        }
+        /* O ID soprepoe a classe */
+        .roxo{ color: purple;
+        }
+        h1,h2{
+            color: blueviolet;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Classes CSS</h1>
+    <h2>Veja exemplos abaixo</h2>
+    <p>Ola mundo</p>
+    <p>Ola mundo</p>
+    <p class= "vermelho">Eu sou vermelho</p>
+    <p  class= "azul">Eu sou azul</p>
+    <p  class= "bgciano" >Eu teno background ciano</p>
+    <p id = "roxo" class = "azul" >Atenção </p>
+    <!-- css inline sobrepoem as classes e ids -->
+    <p id = "roxo" class = "bgciano" style="color: brown; background-color: pink;">Atenção </p>
+    <!-- Podemos separar variasclasses podendo separar por espaço -->
+    <p class="bgciano vermelho">Aqui é azul e vermelho</p>
+</body>
+</html>
